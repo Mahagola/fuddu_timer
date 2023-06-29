@@ -1,0 +1,73 @@
+body{
+    font-family: 'liquid_crystalregular', sans-serif;
+    background-image: url('images/bg_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.clock {
+    height: 100px;
+    width: 70%;
+    line-height: 100px;  
+    margin: 150px auto 0;
+    padding: 0 50px;
+    background: #222;
+    color: #eee;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #222;
+    text-shadow: 0 0 3px #fff;
+    font-size: 50px;
+}
+.set {
+    background-color: #222;
+    height: auto;
+    width: auto;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #eee;
+    box-shadow: 0 0 7px #222;
+    text-shadow: 0 0 3px #fff;
+    margin-top: 20px;
+}
+.set:hover {
+    background-color: #eee;
+    transition: 0.3s ease, color 0.3s ease;
+    color: #222;
+    cursor: pointer;
+  }
+.time-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.time-input select {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #222;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #222;
+    text-shadow: 0 0 3px #fff;
+    text-align-last: center;
+    width: 120px;
+  }
+  .time-input select:focus {
+    outline: none;
+  }
+  .time-input select::-ms-expand {
+    color: #eee;
+  }
+  
+  .time-input select option {
+    color: #fefefe;
+  }
+  
+  
+  

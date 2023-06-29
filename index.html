@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TIME</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="clock"></div>
+    <div class="time-input">
+      <select class="hr">
+        <option value="0">00 hr</option>
+        <option value="1">01 hr</option>
+        <option value="2">02 hr</option>
+        <option value="3">03 hr</option>
+        <option value="4">04 hr</option>
+        <option value="5">05 hr</option>
+      </select>
+      <select class="min">
+        <option value="0">00 min</option>
+        <option value="5">05 min</option>
+        <option value="10">10 min</option>
+        <option value="15">15 min</option>
+        <option value="30">30 min</option>
+        <option value="45">45 min</option>
+      </select>
+      <select class="sec">
+        <option value="0">00 sec</option>
+        <option value="05">05 sec</option>
+        <option value="10">10 sec</option>
+        <option value="15">15 sec</option>
+        <option value="30">30 sec</option>
+        <option value="45">45 sec</option>
+      </select>
+    </div>
+    <audio id="timer_audio" src="https://cdn.freesound.org/previews/219/219244_4082826-lq.mp3"></audio>
+    <div class="btn">
+      <button type="submit" class="set" onclick="set_timer()">Set Timer</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
