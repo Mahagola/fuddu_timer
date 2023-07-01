@@ -8,10 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}  
+} 
 .clock {
-    height: 100px;
-    width: 70%;
+    height: auto;
+    width: auto;
     line-height: 100px;  
     margin: 150px auto 0;
     padding: 0 50px;
@@ -19,7 +19,7 @@ body{
     color: #eee;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 7px #222;
+    transition: box-shadow 0.5s;
     text-shadow: 0 0 3px #fff;
     font-size: 50px;
 }
@@ -33,14 +33,12 @@ body{
     color: #eee;
     box-shadow: 0 0 7px #222;
     text-shadow: 0 0 3px #fff;
+    transition: box-shadow 0.5s;
     margin-top: 20px;
 }
-.set:hover {
-    background-color: #eee;
-    transition: 0.3s ease, color 0.3s ease;
-    color: #222;
-    cursor: pointer;
-  }
+.clock:hover,.set:hover,.time-input select:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
 .time-input {
     display: flex;
     justify-content: center;
@@ -65,9 +63,11 @@ body{
     color: #eee;
   }
   
-  .time-input select option {
-    color: #fefefe;
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url('images/bg_img2.jpg');
   }
+}
   
   
   
